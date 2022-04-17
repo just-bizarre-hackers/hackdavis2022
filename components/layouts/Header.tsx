@@ -55,8 +55,8 @@ const Header: React.FC = () => {
         <h3
           className={
             scroller
-              ? "absolute w-max bottom-0 left-12 md:left-16 lg:left-20 xl:left-24 2xl:left-28 px-8 translate-y-5 shadow-lg bg-themeNavy z-10 text-white rounded-r-lg transition-all transform opacity-1 py-1 animate-pulse"
-              : "absolute shadow-2xl overflow-hidden opacity-0 bottom-0 left-8 translate-y-5 bg-themeYellow px-4  rounded-r-lg transition-all transform"
+              ? "absolute w-max bottom-0 left-12 md:left-16 lg:left-20 xl:left-24 2xl:left-28 px-8 translate-y-5 shadow-lg bg-themeNavy z-50 text-white rounded-r-lg transition-all transform opacity-1 py-1 animate-pulse"
+              : "absolute shadow-2xl z-50 overflow-hidden opacity-0 bottom-0 left-8 translate-y-5 bg-themeYellow px-4  rounded-r-lg transition-all transform"
           }
         >
           <Link href={"/resources"}>

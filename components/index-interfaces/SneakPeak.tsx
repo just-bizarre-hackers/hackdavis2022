@@ -33,7 +33,7 @@ const SneakPeak: React.FC = () => {
     <div className="w-full relative">
       <section className={horizentalPaddingGrowth("w-full py-16")}>
         <h3 className="text-center text-themeNavy font-bold text-2xl mb-12">
-          Have a Sneak Peack at Our Courses!
+          Have a Sneak Peek at Our Courses!
         </h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-8 md:px-12 lg:px-20 xl:px-36">
           {Categories.map((categories, index) => (
