@@ -1,4 +1,8 @@
+/**
+ * @import react
+ */
 import React from "react";
+
 interface loadingBarProps {
   id: string;
 }

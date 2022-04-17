@@ -4,17 +4,20 @@
         opacity: 1;
     }
 }
+
 @keyframes loadingBarContainerFadeOut {
     100% {
         opacity: 0;
     }
 }
+
 #loading-bar-container-in {
     opacity: 0;
     transition: all .23s;
-    background-color: rgb(30,41,59);
+    background-color: rgb(30, 41, 59);
     animation: .5s loadingBarContainerFadeIn forwards ease-in;
 }
+
 #loading-bar-container-out {
     background-color: rgba(30, 41, 59, 0.888);
     opacity: 1;
@@ -95,7 +98,7 @@
 
 #loading-bar span:nth-child(3) {
     opacity: 0;
-    animation: 1.25s .5s  loadingBarAnimateCenter forwards infinite ease-in-out;
+    animation: 1.25s .5s loadingBarAnimateCenter forwards infinite ease-in-out;
 }
 
 #loading-bar span:nth-child(4) {

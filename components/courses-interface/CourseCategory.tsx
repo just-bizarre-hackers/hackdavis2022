@@ -1,13 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
+/**
+ * @import next
+ */
 import { useRouter } from "next/router";
+/**
+ * @import react
+ */
 import React from "react";
+/**
+ * @import react icons
+ */
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+/**
+ * @import our database & interface exports
+ */
 import { Categories, CategoryMetric } from "../../data/Courses";
 
 const CourseCategory: React.FC<{ categoryObject: CategoryMetric }> = ({
   categoryObject,
 }) => {
+  // router
   const router = useRouter();
+  // custom functions
   const onCardClick = (
     index: number,
     title: string,

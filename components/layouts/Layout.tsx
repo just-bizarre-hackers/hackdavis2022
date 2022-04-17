@@ -1,4 +1,10 @@
+/**
+ * @import react
+ */
 import React from "react";
+/**
+ * @import layout inner components
+ */
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -11,9 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* layout header */}
       <Header />
       {/* layout main */}
-      <main id="main">
-          {children}
-      </main>
+      <main id="main">{children}</main>
       {/* layout footer */}
       <Footer />
     </div>

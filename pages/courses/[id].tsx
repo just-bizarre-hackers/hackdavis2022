@@ -6,8 +6,9 @@ import RouteTree from "../../components/reusable/RouteTree";
 import { horizentalPaddingGrowth } from "../../data/ReusableClasses";
 import { AiOutlineCheck } from "react-icons/ai";
 import { Categories } from "../../data/Courses";
+import { NextPage } from "next";
 
-const CourseDetailPage = () => {
+const CourseDetailPage : NextPage = () => {
   const router = useRouter();
   const { id, title, desc, tags } = router.query;
 
@@ -19,11 +20,10 @@ const CourseDetailPage = () => {
         title,
         desc,
       }
-    }, `/learn/${id}`)
+    }, `/learn/${id}`)};
   
-
-  return (id && title && desc)  ? (
-    <div>
+    return (
+      <div>
       <section className={`px-8 py-16 md:px-12 lg:px-20 xl:px-36 2xl:px-60`}>
         <RouteTree />
           <article className="mt-12 grid grid-cols-1 lg:grid-cols-2 relative">
@@ -47,7 +47,7 @@ const CourseDetailPage = () => {
                 </li>
               </ul>
               <div className="md:px-4 pt-8">
-                <button className="px-8 py-3 rounded-full bg-themeNavy transition-all hover hover:bg-themeBlue hover:shadow-xl font-medium text-white shadow-md">
+                <button onClick={() => onGetStartedClick()} className="px-8 py-3 rounded-full bg-themeNavy transition-all hover hover:bg-themeBlue hover:shadow-xl font-medium text-white shadow-md">
                   Get Started
                 </button>
               </div>
@@ -63,12 +63,7 @@ const CourseDetailPage = () => {
           </article>
       </section>
     </div>
-  ) : (
-    <div>
-      <p>Inappropriate Routing Pushed.</p>
-    </div>
-  );
-}
-};
+    )
+  };
 
-export default CourseDetailPage;
+  export default CourseDetailPage;

@@ -1,7 +1,15 @@
-/* eslint-disable react/jsx-key */
+/**
+ * @import next
+ */
 import Link from "next/link";
 import { useRouter } from "next/router";
+/**
+ * @import react
+ */
 import React from "react";
+/**
+ * @import our database & interface exports
+ */
 import { horizentalPaddingGrowth } from "../../data/ReusableClasses";
 
 interface routerTree {
@@ -10,6 +18,7 @@ interface routerTree {
 }
 
 const RouteTree: React.FC = () => {
+  // router
   const router = useRouter();
 
   return (
