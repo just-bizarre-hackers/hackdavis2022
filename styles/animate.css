@@ -1,0 +1,109 @@
+@keyframes loadingBarContainerFadeIn {
+    100% {
+        background-color: rgba(30, 41, 59, 0.888);
+        opacity: 1;
+    }
+}
+@keyframes loadingBarContainerFadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+#loading-bar-container-in {
+    opacity: 0;
+    transition: all .23s;
+    background-color: rgb(30,41,59);
+    animation: .5s loadingBarContainerFadeIn forwards ease-in;
+}
+#loading-bar-container-out {
+    background-color: rgba(30, 41, 59, 0.888);
+    opacity: 1;
+    transition: all .23s;
+
+    animation: .5s loadingBarContainerFadeOut forwards ease-in;
+}
+
+@keyframes loadingBarAnimateInner {
+    25% {
+        transform: translateY(-25%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(-40%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes loadingBarAnimateOuter {
+    25% {
+        transform: translateY(-40%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(-55%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes loadingBarAnimateCenter {
+    25% {
+        transform: translateY(-25%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(25%);
+    }
+
+    75% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+}
+
+#loading-bar span:nth-child(1) {
+    opacity: 0;
+    animation: 1.25s loadingBarAnimateInner forwards infinite ease-out;
+}
+
+#loading-bar span:nth-child(2) {
+    opacity: 0;
+    animation: 1.25s .25s loadingBarAnimateOuter forwards infinite ease-in-out;
+}
+
+#loading-bar span:nth-child(3) {
+    opacity: 0;
+    animation: 1.25s .5s  loadingBarAnimateCenter forwards infinite ease-in-out;
+}
+
+#loading-bar span:nth-child(4) {
+    opacity: 0;
+    animation: 1.25s .25s loadingBarAnimateOuter forwards infinite ease-in-out;
+}
+
+#loading-bar span:nth-child(5) {
+    opacity: 0;
+    animation: 1.25s loadingBarAnimateInner forwards infinite ease-in-out;
+}

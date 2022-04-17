@@ -1,4 +1,4 @@
-# Project Title
+# SmartAllergy
 
 Welcome! This is the source repository for our [JBH](#) project **Project Title** for [HackDavis 2022](#) that takes places in Daivs, California.
 

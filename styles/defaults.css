@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+#landing-background-image-container {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.565),
+        rgba(255, 255, 255, 0.52),
+        rgba(255, 255, 255, 0.52)
+    ), url("../public/smartallergy_landing_background_lower.png");
+}
