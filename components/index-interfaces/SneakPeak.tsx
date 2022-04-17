@@ -35,7 +35,7 @@ const SneakPeak: React.FC = () => {
         <h3 className="text-center text-themeNavy font-bold text-2xl mb-12">
           Have a Sneak Peack at Our Courses!
         </h3>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 px-8 md:px-12 lg:px-20 xl:px-36 2xl:px-60">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-8 md:px-12 lg:px-20 xl:px-36">
           {Categories.map((categories, index) => (
             <article
               onClick={() =>
@@ -50,7 +50,7 @@ const SneakPeak: React.FC = () => {
             >
               <div className="">
                 <img
-                  className="h-full"
+                  className="w-full"
                   alt="random pic"
                   src="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg"
                 />
