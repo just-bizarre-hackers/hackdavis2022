@@ -295,7 +295,7 @@ const LearnDetailPage: NextPage = () => {
                     You&apos;ve completed this session!
                   </h3>
                   <button
-                    onClick={() => router.push("/")}
+                    onClick={() => router.push("/courses")}
                     className="px-8 py-3 bg-themeOrange font-medium text-lg rounded-full transition-all hover hover:bg-opacity-80 hover:shadow-2xl"
                   >
                     Back to Courses

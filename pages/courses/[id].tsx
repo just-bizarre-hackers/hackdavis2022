@@ -55,7 +55,7 @@ const CourseDetailPage : NextPage = () => {
             <section className="py-6 ">
               <article className="bg-slate-200 h-full overflow-hidden rounded-xl lg:rounded-l-none shadow-2xl relative z-10">
                 <img
-                  className="h-full"
+                  className="w-full md:h-full"
                   src="https://wallpaperaccess.com/full/1369012.jpg"
                 />
               </article>

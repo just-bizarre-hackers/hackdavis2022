@@ -68,7 +68,7 @@ const CourseCategory: React.FC<{ categoryObject: CategoryMetric }> = ({
                 onClick={() =>
                   onCardClick(index, course.title, course.desc, course.tags)
                 }
-                className="w-full relative inline-block bg-white rounded-[3rem] overflow-hidden "
+                className="w-full relative inline-block bg-white rounded-[3rem] overflow-hidden"
                 key={index}
               >
                 <div className="w-64 h-64">
@@ -77,7 +77,7 @@ const CourseCategory: React.FC<{ categoryObject: CategoryMetric }> = ({
                     alt="random pic"
                     src="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg"
                   />
-                  <div className="w-full sticky text-sm bottom-0 bg-themeBlue hover:bg-themeNavy hover:bg-opacity-80 text-white text-center h-16 transition-all hover:h-full cursor-pointer flex flex-col justify-between pb-4">
+                  <div className="w-full sticky text-sm bottom-0 bg-themeBlue hover:bg-themeNavy hover:bg-opacity-80 text-white text-center h-16 transition-all hover:h-full cursor-pointer flex flex-col justify-between pb-4 hover:px-4">
                     <h3 className="font-medium py-4 px-4 text-lg">
                       {course.title.slice(0, 21)}
                     </h3>

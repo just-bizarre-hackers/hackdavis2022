@@ -1,3 +1,6 @@
+/**
+** LOADING BAR ANIMATION
+**/
 @keyframes loadingBarContainerFadeIn {
     100% {
         background-color: rgba(30, 41, 59, 0.888);
@@ -109,4 +112,58 @@
 #loading-bar span:nth-child(5) {
     opacity: 0;
     animation: 1.25s loadingBarAnimateInner forwards infinite ease-in-out;
+}
+/**
+** HEADER POPUP ANIMATION
+**/
+@keyframes headerPopupOn {
+
+    70% {
+        transform: translateX(30%);
+    }
+    85% {
+        transform: translateX(-10%);
+    }
+    95% {
+        transform: translateX(5%);
+    }
+    100% {
+        color: white;
+        transform: translateX(0%);
+        opacity: 1;
+        margin-left: -0.5rem;
+        border-left: 1rem solid orange;
+    }
+}
+@keyframes headerPopupOut {
+    100% {
+        color: transparent;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+#header-popup-on {
+    color: transparent;
+    position: absolute;
+    z-index: 30;
+    padding: 1rem 2rem;
+    opacity: 0;
+    bottom: -4.75rem;
+    transform: translateX(-100%);
+    border-left: 1rem solid transparent;
+    margin-left: 0;
+    width: max-content;
+
+    animation: 0.5s headerPopupOn forwards ease-in;
+}
+#header-popup-out {
+    padding: 1rem 2rem;
+    color: white;
+    position: absolute;
+    opacity: 1;
+    bottom: -3.75rem;
+    margin-left: -0.5rem;
+    z-index: 30;
+    animation: 0.5s headerPopupOut forwards ease-out;
 }

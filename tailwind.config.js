@@ -16,7 +16,7 @@ module.exports = {
         themeNavyDarker: "#005064",
         themeOrange: "#FE7A15",
         themeGreen: "#D3dd18",
-        themeYellow: "#FFD667",
+        themeYellow: "#ffd767",
         themeCourseColor1: "#FFEC8D",
         themeCourseColor2: "#FFD88D",
         themeCourseColor3: "#FFC68D",
